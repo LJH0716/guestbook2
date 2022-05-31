@@ -61,7 +61,7 @@ public class GuestbookController extends HttpServlet {
 
 			// 삭제
 		} else if ("delete".equals(action)) {
-			int no = Integer.parseInt(request.getParameter("number"));
+			int no = Integer.parseInt(request.getParameter("no"));
 			String password = request.getParameter("password");
 
 			
@@ -70,7 +70,7 @@ public class GuestbookController extends HttpServlet {
 			// 삭제폼
 		} else if ("deleteForm".equals(action)) {
 			
-			int no = Integer.parseInt(request.getParameter("number"));
+			int no = Integer.parseInt(request.getParameter("no"));
 			
 			// 포워드
 			WebUtil.forward(request, response, "/WEB-INF/deleteForm.jsp");
