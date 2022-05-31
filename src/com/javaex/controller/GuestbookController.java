@@ -19,7 +19,7 @@ public class GuestbookController extends HttpServlet {
 	// 필드
 	private static final long serialVersionUID = 1L;
 
-	// defaut 생성자
+	// default 생성자
 	// 메서드 getter/setter
 
 	// 메서드 일반
