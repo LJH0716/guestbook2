@@ -52,7 +52,7 @@ public class GuestbookController extends HttpServlet {
 			dao.delete(vo);
 
 			WebUtil.redirect(request, response, "/guestbook2/gbc");
-
+			
 		} else {// 리스트
 			GuestbookDao dao = new GuestbookDao();
 			List<GuestbookVo> gList = dao.getList();
